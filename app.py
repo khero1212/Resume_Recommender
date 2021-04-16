@@ -26,6 +26,8 @@ def index():
        if file.filename == '':
            print('No file selected')
            return redirect(request.url)
+       if not allowed_file(file.filename):
+          return "Only pdfs are allowed"
        if file and allowed_file(file.filename):
            filename = secure_filename(file.filename)
            file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)

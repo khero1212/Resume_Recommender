@@ -5,7 +5,7 @@ def tests_prediction_for_Technology_Data_Analytics():
 
     payload={}
     files=[
-    ('file',('sample-resumes_cfa1.pdf',open(r'C:\Users\khero\Desktop\CareerHelp\CareerHelp\textClassifier\test_resumes\sample-resumes_cfa1.pdf','rb'),'application/pdf'))
+    ('file',('sample-resumes_cfa1.pdf',open(r'test_resumes/sample-resumes_cfa1.pdf','rb'),'application/pdf'))
     ]
     headers = {}
 
@@ -18,7 +18,7 @@ def tests_prediction_for_Communication_Entertainment_Arts():
 
     payload={}
     files=[
-    ('file',('Marketing_Resume.pdf',open(r'C:\Users\khero\Desktop\CareerHelp\CareerHelp\textClassifier\test_resumes\Marketing_Resume.pdf','rb'),'application/pdf'))
+    ('file',('Marketing_Resume.pdf',open(r'test_resumes/Marketing_Resume.pdf','rb'),'application/pdf'))
     ]
     headers = {}
 
@@ -31,7 +31,7 @@ def tests_prediction_for_NonProfit_Management():
 
     payload={}
     files=[
-    ('file',('MusicTeacher_Resume.pdf',open(r'C:\Users\khero\Desktop\CareerHelp\CareerHelp\textClassifier\test_resumes\MusicTeacher_Resume.pdf','rb'),'application/pdf'))
+    ('file',('MusicTeacher_Resume.pdf',open(r'test_resumes/MusicTeacher_Resume.pdf','rb'),'application/pdf'))
     ]
     headers = {}
 
@@ -44,7 +44,7 @@ def tests_when_other_extension_sent():
 
     payload={}
     files=[
-    ('file',('MusicTeacher_Resume.docx',open(r'C:\Users\khero\Desktop\CareerHelp\CareerHelp\textClassifier\test_resumes\MusicTeacher_Resume.docx','rb'),'application/vnd.openxmlformats-officedocument.wordprocessingml.document'))
+    ('file',('Test.docx',open(r'test_resumes/Test.docx','rb'),'application/vnd.openxmlformats-officedocument.wordprocessingml.document'))
     ]
     headers = {}
 
