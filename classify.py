@@ -69,14 +69,27 @@ def create_dataset():
                     processed_text = get_processed_text(file_path)
                     label = root.split("/")[1]
                     csv_writer.writerow([label, processed_text])
-
+'''
 try:
     create_dataset()
 except:
     print("Dataset exists.")
 else:
     print("Created dataset.")
+'''
 
+existsDataset = False
+for root, dirs, files in os.walk(os.path.dirname(os.path.abspath(__file__))):
+    for file in files:
+        if file == "dataset.csv":
+            print(root, dirs, files)
+            print("Dataset exists")
+            existsDataset = True
+            break
+
+if not existsDataset:
+    create_dataset()
+    print("Dataset Created")
 
 df = pd.read_csv("dataset.csv")
 df['category_id'] = df['Label'].factorize()[0]
