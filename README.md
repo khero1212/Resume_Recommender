@@ -36,9 +36,9 @@ To run the tests, run the command
 
 You can also find this web app deployed on Heroku using the link: https://resume-classifier-1212.herokuapp.com/
 
-#Note
+# Note
 
 Now, sometimes the deployed app might not run because I am using a free tier dyno version, so if you run into application error while accessing the app via Heroku then I suggest you to come back a few hours later to check out the app.
 
-Currently the server side code is built using Flask, but some in the future I intend to replace the server infrastructe with Django.
+Currently the server side code is built using Flask, but some in the future I intend to replace the server infrastructure with Django.
 
